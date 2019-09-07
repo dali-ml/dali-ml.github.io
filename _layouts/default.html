@@ -12,24 +12,6 @@
 {% seo %}
   </head>
   <body>
-    <header>
-      <div class="title_bar">
-        {% assign temp_title = site.title %}
-        {% assign description = site.description %}
-        {% assign root = '/' %}
-        {% assign workshops = 'neurips2018,isca2019,neurips2019' | split: ',' %}
-        {% if page.workshop_name != site.workshop_name %}
-        {% assign temp_title = page.site_title %}
-        {% assign description = page.site_description %}
-        {% assign root = page.url | slice: 1, 1000 | split: '/' | first | prepend: '/' %}
-        {% endif %}
-        <ul class="navigation">
-            <li class="navigation-link navigation-link-title"><a href="{{ root | absolute_url }}">
-              {{ temp_title | default: site.github.repository_name }}
-            </a></li>
-        </ul>
-      </div>
-    </header>
     <div id="content-wrapper">
       {{ content }}
     </div>
