@@ -4,7 +4,12 @@
 @import "{{ site.theme }}";
 
 body {
-    background: #fcfcf9;
+    background: #090909;
+    margin: 0;
+}
+
+#content-wrapper {
+    border-top: none
 }
 
 .logo {
@@ -17,12 +22,34 @@ body {
 
 .title {
     font-size: 48px;
-    color: rgba(0, 0, 0, 0.99);
+    color: rgba(255, 255, 255, 0.99);
     text-align: center;
 }
 
 .subtitle {
     font-size: 24px;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
+}
+
+form {
+    background: none;
+}
+
+.email_form {
+    text-align: center;
+}
+
+.email_form .email_form_submit, .email_form .email_form_text {
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.01);
+    margin-top: 10px;
+}
+
+.email_form .email_form_text {
+}
+
+.email_form .email_form_submit {
 }
